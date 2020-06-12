@@ -3,6 +3,7 @@ const server = express()
 const PORT = process.env.PORT || 5000
 const helmet = require('helmet')
 
+const recipesRouter = require('./recipes/recipesRouter.js')
 
 server.use(helmet())
 server.use(express.json())
